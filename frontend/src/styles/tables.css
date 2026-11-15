@@ -1,0 +1,13 @@
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid var(--bd);white-space:nowrap}
+th{background:#f0f4ec;cursor:pointer;position:sticky;top:0}
+th:first-child,td:first-child{text-align:left}
+tr.tot td{font-weight:700;background:#f7faf4}
+.sc{overflow:auto;max-height:430px}
+table.rank td,table.rank th{text-align:left}
+table.hm th.c{text-align:center;padding:4px}
+table.hm td{padding:4px;min-width:30px;text-align:center;font-size:10px}
+table.hm{min-width:max-content}
+table.hm th{z-index:2}
+table.hm th:first-child{position:sticky;left:0;z-index:3;min-width:58px;background:#f0f4ec;box-shadow:1px 0 0 var(--bd)}
+table.hm td:first-child{position:sticky;left:0;z-index:1;min-width:58px;background:#fff;box-shadow:1px 0 0 var(--bd)}

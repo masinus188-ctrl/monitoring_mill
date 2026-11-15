@@ -1,0 +1,26 @@
+.login-page{display:flex;align-items:center;justify-content:center;min-height:100vh;min-height:100svh;padding:clamp(16px,4vh,36px) clamp(12px,3vw,24px);background:linear-gradient(135deg,#626773,#8d898d);color:#fff;font-family:Roboto,Arial,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.login-page *{box-sizing:border-box}
+.login-content{width:min(47.5rem,100%)}
+.login-form{position:relative;width:100%;padding:clamp(30px,7vh,60px) clamp(22px,6vw,64px);background:rgba(20,25,38,.22)}
+.login-form::before{position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,#35c3c1,#00d6b7);content:""}
+.flex-row{display:flex;min-width:0;margin-bottom:clamp(18px,4vh,30px)}
+.lf--label{display:flex;flex:0 0 clamp(54px,6vw,68px);align-items:center;justify-content:center;background:#f5f6f8;cursor:text}
+.lf--label svg{display:block;flex:none;width:34px;height:34px;fill:none;stroke:#9da6b6;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.6}
+.flex-row:nth-child(2) .lf--label svg{width:38px;height:38px;stroke-width:3.5}
+.lf--label .password-key-dot{fill:currentColor;stroke:none}
+.lf--input{flex:1;min-width:0;height:clamp(58px,9vh,78px);padding:0 clamp(14px,2.2vw,24px);border:0;border-radius:0;outline:none;background:#fff;color:#686868;font:400 clamp(18px,2.1vw,26px)/1.3 Roboto,Arial,sans-serif}
+.password-visibility{display:grid;flex:0 0 clamp(42px,5vw,54px);width:clamp(42px,5vw,54px);height:clamp(58px,9vh,78px);place-items:center;padding:0;border:0;border-radius:0;background:#fff;color:#77849a}
+.password-visibility:hover{background:#f5f7fb;color:#2459a6}
+.password-visibility:focus-visible{position:relative;z-index:1;outline:2px solid #35c3c1;outline-offset:-3px}
+.password-visibility svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.lf--input::placeholder{color:#858585;opacity:1}
+.lf--input:focus{position:relative;z-index:1;box-shadow:0 0 0 2px #35c3c1}
+.lf--submit{display:block;width:100%;min-height:clamp(64px,10vh,80px);padding:12px;border:0;border-radius:0;background:linear-gradient(to right,#35c3c1,#00d6b7);color:#fff;font:700 clamp(22px,2.3vw,28px)/1.3 Roboto,Arial,sans-serif;text-shadow:0 1px 0 #0003;cursor:pointer;transition:filter .15s ease,transform .15s ease}
+.lf--submit:hover:not(:disabled){filter:brightness(1.06);transform:translateY(-1px)}
+.lf--submit:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.lf--submit:disabled{cursor:wait;opacity:.7}
+.lf--forgot{margin:clamp(12px,2.4vh,18px) 0 0;color:#00d6b7;font-size:clamp(17px,1.9vw,24px);line-height:1.4;text-align:center}
+.login-error{margin:-8px 0 16px;color:#ffe1e1;font-size:clamp(13px,1.5vw,15px);line-height:1.45;overflow-wrap:anywhere}
+@media(max-width:600px){.login-content{width:min(100%,420px)}.login-page{padding:18px 14px}.login-form{padding:clamp(24px,6vh,40px) clamp(16px,6vw,28px)}.flex-row{margin-bottom:clamp(16px,3vh,22px)}.lf--label{flex-basis:50px}.lf--label svg{width:27px;height:29px}.flex-row:nth-child(2) .lf--label svg{width:34px;height:34px}.lf--input{height:clamp(54px,8vh,64px);padding:0 14px;font-size:18px}.password-visibility{flex-basis:42px;width:42px;height:clamp(54px,8vh,64px)}.lf--submit{min-height:clamp(56px,8.5vh,68px);font-size:20px}.lf--forgot{font-size:clamp(15px,4vw,18px)}}
+@media(max-height:520px) and (orientation:landscape){.login-page{align-items:flex-start;padding-top:14px;padding-bottom:14px}.login-form{padding-top:22px;padding-bottom:22px}.flex-row{margin-bottom:12px}.lf--input,.password-visibility{height:48px}.lf--submit{min-height:50px}.lf--forgot{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.lf--submit{transition:none}}
